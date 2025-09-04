@@ -2,6 +2,7 @@ package com.tacho.applacation.Base;
 import lombok.Data;
 
 @Data
+
 public class Ingredient {
     private final String id;
     private final String name;
@@ -10,4 +11,5 @@ public class Ingredient {
     public enum Type {
         WRAP, PROTEIN, VEGGIES, CHEESE, SAUCE
     }
+
 }
