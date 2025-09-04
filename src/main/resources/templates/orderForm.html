@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>玉米卷订单</title>
+    <link th:href="@{/styles.css}" rel="stylesheet">
+</head>
+<body>
+  <form method="post" th:action="@{/orders}" th:object="${tacoOrder}">
+    <h2>规划 您的订单！</h2>
+    <img th:src="@{/images/TacoCloud.png}" alt="图片未加载" />
+    <h3>订单里的玉米卷：</h3>
+    <a th:href="@{/design}" id="another">重新添加玉米卷？</a>
+    <ul>
+      <li th:each="taco : ${tacoOrder.tacos}">
+        <span th:text="${taco.name}">placeholder</span>
+      </li>
+    </ul>
+    <h3>想要送到……</h3>
+    <label for="deliveryName">姓名:</label>
+    <input type="text" th:field="*{deliveryName}" id="deliveryName" />
+    <br />
+    <label for="deliveryProvince">省区:</label>
+    <input type="text" id="deliveryProvince" th:field="*{deliveryProvince}" />
+    <br />
+    <label for="deliveryState">市区：</label>
+    <input type="text" id="deliveryState" th:field="*{deliveryState}" />
+    <br />
+    <label for="deliveryCity">县城：</label>
+    <input type="text" id="deliveryCity" th:field="*{deliveryCity}">
+    <br />
+    <label for="deliveryStreet">街道：</label>
+    <input type="text" id="deliveryStreet" th:field="*{deliveryStreet}">
+    <br />
+    <label for="deliveryZip">街道地址(具体到门牌号)：</label>
+    <input type="text" id="deliveryZip" th:field="*{deliveryZip}">
+    <br />
+    <h3>这里是支付界面……</h3>
+    <label for="ccNumber">输入卡号：</label>
+    <input type="text" id="ccNumber" th:field="*{ccNumber}">
+    <br />
+    <label for="ccExpiration">expiration：</label>
+    <input type="text" id="ccExpiration" th:field="*{ccExpiration}">
+    <br />
+    <label for="ccCVV">cvv号码：</label>
+    <input type="text" id="ccCVV" th:field="*{ccCVV}" placeholder="请输入号码 ：">
+    <br />
+    <input type="submit" name="提交" />
+  </form>
+</body>
+</html>
