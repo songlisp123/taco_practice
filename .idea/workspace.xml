@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="20250905熬夜修改了代码，修复一些bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Taco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/TacoOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tacho/applacation/HomeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tacho/applacation/HomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tacho/applacation/HomeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tacho/applacation/HomeControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +34,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev_branch" />
+        <entry key="$PROJECT_DIR$" value="devlopment" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;songlisp123&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/songlisp123/taco_practice.git&quot;,
+    &quot;accountId&quot;: &quot;fabc430d-8361-428f-979d-d70c29031170&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -43,18 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.HomeControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;I:/20250820/taco-cloud/src/main/resources/static&quot;,
-    &quot;应用程序.ApplacationApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.HomeControllerTest.executor": "Run",
+    "Maven.taco-cloud [clean].executor": "Run",
+    "Maven.taco-cloud [compile].executor": "Run",
+    "Maven.taco-cloud [test].executor": "Run",
+    "Maven.taco-cloud [validate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "I:/20250820/taco-cloud/src/main/resources/static",
+    "应用程序.ApplacationApplication.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\20250820\taco-cloud\src\main\resources\static\" />
@@ -118,7 +145,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

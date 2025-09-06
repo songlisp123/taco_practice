@@ -3,9 +3,11 @@ package com.tacho.applacation.controller;
 import com.tacho.applacation.Base.Ingredient;
 import com.tacho.applacation.Base.Taco;
 import com.tacho.applacation.Base.TacoOrder;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import com.tacho.applacation.Base.Ingredient.Type;
 
@@ -67,9 +69,19 @@ public class DesignTacoController {
     }
 
     @PostMapping
-    public String processTaco(Taco taco , @ModelAttribute TacoOrder tacoOrder) {
+    public String processTaco(
+            @Valid Taco taco , Errors errors,
+            @ModelAttribute TacoOrder tacoOrder) {
+
+        System.out.println(errors);
+        if (errors.hasErrors())
+            return "design";
         tacoOrder.addTaco(taco);
         log.info("处理玉米饼：{}",taco);
         return "redirect:/orders/current";
     }
 }
+/*
+这个程序目前能做什么？如果提交的表单为空？怎么办？下一步的计划是：验证用户的输入并返回正确的值
+要验证用户输入的参数
+ */

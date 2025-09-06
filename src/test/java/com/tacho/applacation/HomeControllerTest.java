@@ -36,11 +36,11 @@ public class HomeControllerTest {
                         MockHttpServletRequest request = result.getRequest();
                         Iterator<String> attributeNames =
                                 request.getAttributeNames().asIterator();
-//                        while (attributeNames.hasNext()) {
-//                            System.out.println("=================================");
-//                            System.out.println(attributeNames.next());
-//                            System.out.println("=================================");
-//                        }
+                        while (attributeNames.hasNext()) {
+                            System.out.println("=================================");
+                            System.out.println(attributeNames.next());
+                            System.out.println("=================================");
+                        }
                     });
         } catch (Exception e) {
             e.printStackTrace();

@@ -58,6 +58,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--这是一个测试框架-->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -70,9 +71,16 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--添加lombok依赖-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<!--springboot验证框架-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
 	</dependencies>
