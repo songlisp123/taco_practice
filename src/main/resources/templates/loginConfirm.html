@@ -7,12 +7,14 @@
 <body>
   <h1>登录界面</h1>
   <span>请按照以下登录：</span>
-  <form method="post" th:action="@{login/complete}">
+  <form method="post" th:action="@{login/complete}" th:object="${user}">
     <label for="username"></label>
-    <input id="username" type="text" placeholder="请输入用户名称" autofocus="true" />
+    <input id="username" type="text" th:field="*{name}"
+           placeholder="请输入用户名称" autofocus="true" />
     <br />
     <label for="password"></label>
-    <input id="password" type="text" placeholder="请输入用户密码"  />
+    <input id="password" type="text" th:field="*{password}"
+           placeholder="请输入用户密码"  />
     <br />
     <input type="submit" name="提交" />
   </form>

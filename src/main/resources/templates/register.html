@@ -26,12 +26,15 @@
 <body>
   <h1>登录界面！</h1>
   <span>请按照以下格式登录</span>
-  <form method="post" th:object="${user}" th:action="@{reg/complete}">
+  <form method="post" th:object="${user}" >
       <label for="name">用户名称：</label>
       <input type="text" id="name" th:field="*{name}"  autofocus="true"/>
       <br />
       <label for="password">用户密码：</label>
       <input id="password" type="text" th:field="*{password}" />
+      <span class="validationError"
+            th:if="${#fields.hasErrors('password')}"
+            th:errors="*{password}">ERRORS</span>
       <br />
       <label for="email">邮箱：</label>
       <input id="email" type="text" th:field="*{email}" required="false" disabled="true"

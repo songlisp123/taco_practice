@@ -4,6 +4,8 @@ import com.tacho.applacation.Base.User;
 import com.tacho.applacation.Base.UserOrders;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 
@@ -28,15 +30,14 @@ public class userRegController {
         return "register";
     }
 
-    @PostMapping("reg/complete")
+    @PostMapping("reg")
     public String regComplete(
-            User user,
+            @Validated User user,Errors error,
             @ModelAttribute UserOrders userOrders,
             SessionStatus SessionStatus)
     {
-//        System.out.println("注册成功！");
-//        System.out.println("用户名："+user.getName());
-//        System.out.println("密码："+user.getPassword());
+        if (error.hasErrors())
+            return "register";
         userOrders.add(user);
         SessionStatus.setComplete();
         return "regComplete";
