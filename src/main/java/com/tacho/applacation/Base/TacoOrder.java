@@ -15,7 +15,7 @@ import java.util.List;
 @Data
 public class TacoOrder implements Serializable {
     private static final Long serialVersionId = 1L;
-    private Date createTime;
+    private Date createTime = new Date();
     private Long id;
 
     @NotBlank(message = "发送人不能为空")
@@ -36,7 +36,7 @@ public class TacoOrder implements Serializable {
     @NotBlank(message = "邮政编码不能为空")
     private String deliveryZip;
 
-    @CreditCardNumber(message = "银行卡号不能为空")
+//    @CreditCardNumber(message = "银行卡号不能为空")
     private String ccNumber;
 
     private String ccExpiration;

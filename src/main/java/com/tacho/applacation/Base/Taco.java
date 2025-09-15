@@ -11,7 +11,6 @@ import java.util.List;
 
 @Data
 public class Taco {
-    @NotNull
     @Schema(description = "id",required = true,example = "10")
     private Integer id;
     private Date createTime = new Date();

@@ -40,8 +40,14 @@
       <input id="email" type="text" th:field="*{email}" required="false" disabled="true"
              placeholder="非默认选项"/>
       <br />
-      <label for="phone">邮箱：</label>
+      <label for="phone">电话：</label>
       <input id="phone" type="text" th:field="*{phone}" required="false" />
+      <br />
+      <label for="image">图像：</label>
+      <input id="image" type="file" th:field="*{image}"  />
+      <br />
+      <label for="description">描述：</label>
+      <input id="description" type="text" th:field="*{description}"  />
       <br />
       <input class="sumbit" type="submit" name="提交" />
   </form>

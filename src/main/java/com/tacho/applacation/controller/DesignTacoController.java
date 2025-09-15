@@ -3,6 +3,8 @@ package com.tacho.applacation.controller;
 import com.tacho.applacation.Base.Ingredient;
 import com.tacho.applacation.Base.Taco;
 import com.tacho.applacation.Base.TacoOrder;
+import com.tacho.applacation.Base.User;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -18,7 +20,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Controller
 @RequestMapping("/design")
-@SessionAttributes("tacoOrder")
+@SessionAttributes(names = "tacoOrder")
 
 public class DesignTacoController {
 
@@ -56,7 +58,9 @@ public class DesignTacoController {
     }
 
     @GetMapping
-    public String showDesignForm() {
+    public String showDesignForm(HttpSession session,Model model) {
+        User user = (User) session.getAttribute("user");
+        model.addAttribute("user",user);
         return "design";
     }
 

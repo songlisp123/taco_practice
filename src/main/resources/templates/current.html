@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>当前用户</title>
+</head>
+<body th:object="${user}">
+    <h1>当前用户页</h1>
+    <p>当前用户：<span th:text="*{name}">username</span></p>
+    <p>密码：<span th:text="*{password}">password</span> </p>
+    <h2>当前订单：</h2>
+    <ul>
+        <li th:each="tacoOrder : *{orders}">
+            <span th:text="${tacoOrder.deliveryName}">place</span>
+        </li>
+    </ul>
+    <form  method="get" th:action="@{/}">
+        <button type="submit" >返回</button>
+    </form>
+    <br />
+    <a th:href="@{/design}">开始设计</a>
+</body>
+</html>

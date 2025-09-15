@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="20250915修改代码">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="添加流处理器器，修改登录逻辑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/ApplacationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/ApplacationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Taco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/TacoOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/config/webConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/config/webConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/userRegController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/userRegController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginConfirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginConfirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/regComplete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/regComplete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/design.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/design.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tacho/applacation/ApplacationApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tacho/applacation/ApplacationApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,13 +81,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "I:/20250820/taco-cloud/src/main/resources/static",
+    "last_opened_file_path": "I:/20250820/taco-cloud/src/main/java/com/tacho/applacation",
     "settings.editor.selected.configurable": "File.Encoding",
     "应用程序.ApplacationApplication.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\20250820\taco-cloud\src\main\java\com\tacho\applacation" />
       <recent name="I:\20250820\taco-cloud\src\main\resources\static\" />
       <recent name="I:\20250820\taco-cloud\src\main\resources\static\images" />
     </key>
@@ -152,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757901055676</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加流处理器器，修改登录逻辑">
+      <option name="closed" value="true" />
+      <created>1757918234874</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1757918234874</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +200,7 @@
     <MESSAGE value="20250905熬夜修改了代码，修复一些bug" />
     <MESSAGE value="20250906修改代码，完成依赖" />
     <MESSAGE value="20250915修改代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="20250915修改代码" />
+    <MESSAGE value="添加流处理器器，修改登录逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加流处理器器，修改登录逻辑" />
   </component>
 </project>

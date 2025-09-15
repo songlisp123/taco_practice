@@ -8,6 +8,14 @@ lang="zh-hans">
 <body>
     <h1>Welcome to...</h1>
     <p>这是一个测试</p>
-    <img th:src="@{/images/TacoCloud.png}" alt="图片未加载">
+    <div>
+        <p><img th:src="@{/images/TacoCloud.png}" alt="图片未加载"></p>
+        <h3>现在开始您的设计？</h3>
+        <span><a th:href="@{design}">现在开始</a> | 稍后继续？
+        </span>
+    </div>
+    <p><a href="https://www.jd.com" >
+        <img th:src="@{/images/jd.webp}" alt="图片未加载" width="200px" height="200px">
+    </a></p>
 </body>
 </html>
