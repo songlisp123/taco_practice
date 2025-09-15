@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登录视图</title>
+    <style>
+      *
+        {
+          background:RGB(30, 31, 34);
+        }
+      h1,span,label
+        {
+            color:RGB(248, 108, 55);
+         }
+      input
+        {
+            color:RGB(187, 189, 171);
+        }
+        sumbit
+        {
+            background:RGB(14, 138, 218);
+            color:RGB(187, 189, 171);
+        }
+    </style>
+</head>
+<body>
+  <h1>登录界面！</h1>
+  <span>请按照以下格式登录</span>
+  <form method="post" th:object="${user}" th:action="@{reg/complete}">
+      <label for="name">用户名称：</label>
+      <input type="text" id="name" th:field="*{name}"  autofocus="true"/>
+      <br />
+      <label for="password">用户密码：</label>
+      <input id="password" type="text" th:field="*{password}" />
+      <br />
+      <label for="email">邮箱：</label>
+      <input id="email" type="text" th:field="*{email}" required="false" disabled="true"
+             placeholder="非默认选项"/>
+      <br />
+      <label for="phone">邮箱：</label>
+      <input id="phone" type="text" th:field="*{phone}" required="false" />
+      <br />
+      <input class="sumbit" type="submit" name="提交" />
+  </form>
+</body>
+</html>

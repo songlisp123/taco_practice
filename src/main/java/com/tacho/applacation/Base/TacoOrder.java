@@ -4,15 +4,19 @@ package com.tacho.applacation.Base;
 
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Data
-public class TacoOrder {
+public class TacoOrder implements Serializable {
+    private static final Long serialVersionId = 1L;
+    private Date createTime;
+    private Long id;
 
     @NotBlank(message = "发送人不能为空")
     private String deliveryName;
@@ -36,6 +40,7 @@ public class TacoOrder {
     private String ccNumber;
 
     private String ccExpiration;
+
     @Digits(integer=3, fraction=0, message="Invalid CVV")
     private String ccCVV;
 
