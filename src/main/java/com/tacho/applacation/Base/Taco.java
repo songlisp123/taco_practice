@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 public class Taco {
     @Schema(description = "id",required = true,example = "10")
-    private Integer id;
+    private Long id;
     private Date createTime = new Date();
     @NotNull
     @Size(min=5,message = "长度必须为5")

@@ -11,6 +11,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import com.tacho.applacation.Base.Ingredient.Type;
 
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -18,16 +19,15 @@ import java.util.stream.StreamSupport;
 @Controller
 @RequestMapping("/design")
 @SessionAttributes(names = "tacoOrder")
-
 public class DesignTacoController {
 
+    private static final Logger logger = Logger.getLogger("taco");
     private final JdbcIngredientRepository repository;
 
     @Autowired
     public DesignTacoController(JdbcIngredientRepository repository) {
         this.repository = repository;
     }
-
 
     @ModelAttribute
     public void addIngredientsToModel(Model model) {
@@ -74,6 +74,7 @@ public class DesignTacoController {
             return "design";
         tacoOrder.addTaco(taco);
         log.info("处理玉米饼：{}",taco);
+        logger.info("处理玉米饼"+taco.toString());
         return "redirect:/orders/current";
     }
 }
