@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="创建配料仓库，消除代码中的硬编码">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="创建sql语句">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/windowHandle/CustonFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/windowHandle/CustonFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,23 +59,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.HomeControllerTest.executor": "Run",
-    "Maven.taco-cloud [clean].executor": "Run",
-    "Maven.taco-cloud [compile].executor": "Run",
-    "Maven.taco-cloud [test].executor": "Run",
-    "Maven.taco-cloud [validate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "I:/20250820/taco-cloud/src/main/resources",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "应用程序.ApplacationApplication.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.HomeControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.taco-cloud [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.taco-cloud [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.taco-cloud [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.taco-cloud [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;I:/20250820/taco-cloud/src/main/resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;应用程序.ApplacationApplication.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\20250820\taco-cloud\src\main\resources" />
@@ -171,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757940231729</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="创建sql语句">
+      <option name="closed" value="true" />
+      <created>1757949029104</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1757949029104</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +218,7 @@
     <MESSAGE value="添加流处理器器，修改登录逻辑" />
     <MESSAGE value="这是一个简单的用户订单" />
     <MESSAGE value="创建配料仓库，消除代码中的硬编码" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建配料仓库，消除代码中的硬编码" />
+    <MESSAGE value="创建sql语句" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建sql语句" />
   </component>
 </project>

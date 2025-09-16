@@ -4,7 +4,8 @@ import java.time.LocalDateTime;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
-public class CustonFormatter extends Formatter {
+public class
+CustonFormatter extends Formatter {
 
     private static Long messageId;
     static {
