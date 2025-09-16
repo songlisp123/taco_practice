@@ -23,7 +23,6 @@ public class User {
     private List<TacoOrder> orders = new ArrayList<>();
     private Image image;
     private String description;
-
     public void add(TacoOrder order) {
         orders.add(order);
     }

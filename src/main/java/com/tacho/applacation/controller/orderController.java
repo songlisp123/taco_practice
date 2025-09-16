@@ -1,6 +1,5 @@
 package com.tacho.applacation.controller;
 
-import com.tacho.applacation.Base.JdbcOrderRepository;
 import com.tacho.applacation.Base.TacoOrder;
 import com.tacho.applacation.Base.User;
 import jakarta.servlet.http.HttpSession;
@@ -44,13 +43,17 @@ public class orderController {
     public String processOrder(
             @Valid TacoOrder tacoOrder, Errors errors,
             SessionStatus sessionStatus,
-            HttpSession session)
+            HttpSession session,
+            Model model)
     {
         if (errors.hasErrors())
             return "orderForm";
         repository.save(tacoOrder);
         log.info("提交订单，{}",tacoOrder);
         logger.info("提交订单:"+ tacoOrder);
+        User user = (User) session.getAttribute("user");
+        user.add(tacoOrder);
+        model.addAttribute("user",user);
         sessionStatus.setComplete();
         return "redirect:/";
     }

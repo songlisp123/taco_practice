@@ -1,5 +1,7 @@
 package com.tacho.applacation.Base;
 
-public interface OrderRepository {
-    TacoOrder save(TacoOrder order);
+import org.springframework.data.repository.CrudRepository;
+
+public interface OrderRepository
+        extends CrudRepository<TacoOrder,Long> {
 }

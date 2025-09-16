@@ -1,13 +1,9 @@
 package com.tacho.applacation.converter;
 
 import com.tacho.applacation.Base.Ingredient;
-import com.tacho.applacation.Base.JdbcIngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Component
 public class converter implements Converter<String, Ingredient> {
