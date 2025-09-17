@@ -1,7 +1,7 @@
 package com.tacho.applacation.interceptor;
 
 
-import com.tacho.applacation.Base.User;
+import com.tacho.applacation.entity.User;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;

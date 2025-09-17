@@ -1,7 +1,7 @@
 package com.tacho.applacation.controller;
 
 import com.tacho.applacation.ApplacationApplication;
-import com.tacho.applacation.Base.User;
+import com.tacho.applacation.entity.User;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

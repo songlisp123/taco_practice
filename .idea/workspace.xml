@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="更改代码添加注释">
+    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="使用 spring data jdbc 注解简化仓库接口">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/IngredientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/JdbcIngredientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/JdbcOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/converter/converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/converter/converter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758035885500</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="使用 spring data jdbc 注解简化仓库接口">
+      <option name="closed" value="true" />
+      <created>1758038992226</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758038992226</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +242,7 @@
     <MESSAGE value="创建sql语句" />
     <MESSAGE value="创建订单仓库接口，并创建订单实现类" />
     <MESSAGE value="更改代码添加注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改代码添加注释" />
+    <MESSAGE value="使用 spring data jdbc 注解简化仓库接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用 spring data jdbc 注解简化仓库接口" />
   </component>
 </project>

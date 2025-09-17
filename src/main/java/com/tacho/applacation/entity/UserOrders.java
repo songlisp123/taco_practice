@@ -1,4 +1,4 @@
-package com.tacho.applacation.Base;
+package com.tacho.applacation.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

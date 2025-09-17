@@ -1,6 +1,5 @@
-package com.tacho.applacation.Base;
+package com.tacho.applacation.entity;
 
-import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,7 @@
 package com.tacho.applacation.controller;
 
-import com.tacho.applacation.Base.User;
-import com.tacho.applacation.Base.UserOrders;
+import com.tacho.applacation.entity.User;
+import com.tacho.applacation.entity.UserOrders;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
