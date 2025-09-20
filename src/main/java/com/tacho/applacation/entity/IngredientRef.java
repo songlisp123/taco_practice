@@ -1,5 +1,6 @@
-package com.tacho.applacation.Base;
+package com.tacho.applacation.entity;
 
+import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data

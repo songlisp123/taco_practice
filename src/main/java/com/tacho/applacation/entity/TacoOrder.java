@@ -2,19 +2,24 @@ package com.tacho.applacation.entity;
 
 //import lombok.Data;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
+
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Entity
 @Data
 public class TacoOrder implements Serializable {
     private static final Long serialVersionId = 1L;
     private Date createTime = new Date();
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotBlank(message = "发送人不能为空")
@@ -43,6 +48,7 @@ public class TacoOrder implements Serializable {
     @Digits(integer=3, fraction=0, message="Invalid CVV")
     private String ccCVV;
 
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Taco> tacos = new ArrayList<>();
     public void addTaco(Taco taco) {
         tacos.add(taco);

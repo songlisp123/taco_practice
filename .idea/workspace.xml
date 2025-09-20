@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="使用 spring data jdbc 注解简化仓库接口">
+    <list default="true" id="6f320728-ba65-40ac-9b01-533fd33ad1e2" name="更改" comment="重构项目">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/entity/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/IngredientRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/entity/IngredientRef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/inteface/IngredientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/Base/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/inteface/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/DesignTacoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/controller/orderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/converter/converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/converter/converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/entity/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/entity/Taco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/entity/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacho/applacation/entity/TacoOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,29 +69,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.HomeControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.taco-cloud [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.taco-cloud [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.taco-cloud [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.taco-cloud [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;I:/20250820/taco-cloud/src/main/resources&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;应用程序.ApplacationApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.HomeControllerTest.executor": "Run",
+    "Maven.taco-cloud [clean].executor": "Run",
+    "Maven.taco-cloud [compile].executor": "Run",
+    "Maven.taco-cloud [test].executor": "Run",
+    "Maven.taco-cloud [validate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "I:/20250820/taco-cloud/taco/src/main/resources",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "应用程序.ApplacationApplication.executor": "Run",
+    "应用程序.TacoApplication.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\20250820\taco-cloud\taco\src\main\resources" />
+      <recent name="I:\20250820\taco-cloud\taco\src\main\resources\static\images" />
       <recent name="I:\20250820\taco-cloud\src\main\resources" />
       <recent name="I:\20250820\taco-cloud\src\main\java\com\tacho\applacation" />
       <recent name="I:\20250820\taco-cloud\src\main\resources\static\" />
-      <recent name="I:\20250820\taco-cloud\src\main\resources\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\20250820\taco-cloud\taco\src\main\resources\templates" />
+      <recent name="I:\20250820\taco-cloud\taco\src\main\resources\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -202,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758038992226</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="重构项目">
+      <option name="closed" value="true" />
+      <created>1758117041453</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758117041453</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +270,7 @@
     <MESSAGE value="创建订单仓库接口，并创建订单实现类" />
     <MESSAGE value="更改代码添加注释" />
     <MESSAGE value="使用 spring data jdbc 注解简化仓库接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用 spring data jdbc 注解简化仓库接口" />
+    <MESSAGE value="重构项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构项目" />
   </component>
 </project>

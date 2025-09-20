@@ -1,4 +1,4 @@
-package com.tacho.applacation.Base;
+package com.tacho.applacation.inteface;
 
 import com.tacho.applacation.entity.TacoOrder;
 import org.springframework.data.repository.CrudRepository;

@@ -10,9 +10,13 @@
         <module name="taco-cloud" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="taco" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="taco" options="-parameters" />
       <module name="taco-cloud" options="-parameters" />
     </option>
   </component>

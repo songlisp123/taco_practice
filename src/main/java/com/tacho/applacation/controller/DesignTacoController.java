@@ -1,9 +1,10 @@
 package com.tacho.applacation.controller;
 
-import com.tacho.applacation.Base.*;
+import com.tacho.applacation.entity.Ingredient;
 import com.tacho.applacation.entity.Taco;
 import com.tacho.applacation.entity.TacoOrder;
 import com.tacho.applacation.entity.User;
+import com.tacho.applacation.inteface.IngredientRepository;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-import com.tacho.applacation.Base.Ingredient.Type;
+import com.tacho.applacation.entity.Ingredient.Type;
 
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -25,10 +26,10 @@ import java.util.stream.StreamSupport;
 public class DesignTacoController {
 
     private static final Logger logger = Logger.getLogger("taco");
-    private final JdbcIngredientRepository repository;
+    private final IngredientRepository repository;
 
     @Autowired
-    public DesignTacoController(JdbcIngredientRepository repository) {
+    public DesignTacoController(IngredientRepository repository) {
         this.repository = repository;
     }
 
@@ -82,5 +83,6 @@ public class DesignTacoController {
     }
 }
 /*
-这个程序目前能做什么？你能为一份taco创建一个订单，并通过将
+这个程序目前能做什么？你能为一份taco创建一个订单，并通过将taco对象与表单进行绑定
+随后将绑定后的taco对象储存在tacoOrders中
  */

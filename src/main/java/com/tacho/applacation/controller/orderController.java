@@ -2,6 +2,7 @@ package com.tacho.applacation.controller;
 
 import com.tacho.applacation.entity.TacoOrder;
 import com.tacho.applacation.entity.User;
+import com.tacho.applacation.inteface.OrderRepository;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -24,10 +25,10 @@ import java.util.logging.Logger;
 public class orderController {
 
     private static final Logger logger = Logger.getLogger("taco");
-    private final JdbcOrderRepository repository;
+    private final OrderRepository repository;
 
     @Autowired
-    public orderController(JdbcOrderRepository repository) {
+    public orderController(OrderRepository repository) {
         this.repository = repository;
     }
 

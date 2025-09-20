@@ -1,6 +1,7 @@
 package com.tacho.applacation.converter;
 
-import com.tacho.applacation.Base.Ingredient;
+import com.tacho.applacation.entity.Ingredient;
+import com.tacho.applacation.inteface.IngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
@@ -8,10 +9,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class converter implements Converter<String, Ingredient> {
 
-   private JdbcIngredientRepository repository;
+   private IngredientRepository repository;
 
    @Autowired
-   public converter(JdbcIngredientRepository repository) {
+   public converter(IngredientRepository repository) {
        this.repository = repository;
    }
 
